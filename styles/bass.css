@@ -77,6 +77,9 @@ a:hover {
     padding-bottom: 13px;
 }
 
+.home {
+    margin: 10px;
+}
 
 h2 {
     color: white;
@@ -111,7 +114,7 @@ h2 {
     background-color: rgb(33, 33, 98);
 }
 
-span p {
+p {
     color: white;
     margin: 10px;
 }
@@ -150,6 +153,7 @@ height: 50px;
 
 .creditP {
     text-align: center;
+    color: black;
 }
 
 div.a {
