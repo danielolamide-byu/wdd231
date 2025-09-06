@@ -1,11 +1,82 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space X</title>
+    <meta name="description" content="Home Page for WDD231">
+    <meta name="author" content="Daniel">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/bass.css">
+    <link rel="stylesheet" href="styles/large_bass.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="scripts/index.js" defer></script>
+    <title>WDD231 Home Page</title>
 </head>
+
 <body>
-    <h2>Hello World!</h2>
+    <header>
+        <div class="head">
+        <img src="images/cloud.svg" alt="cloud">
+        <span>Olamide Daniel</span>
+        <button class="hamBurger-btn" id="ham-btn" aria-label="hamburger-button"></button>
+        </div>
+        <nav id="nav-bar" class="navigation">
+       <ul>
+            <li class="current" id="target"><a href="#" class="a">News & Events</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Home</h1>
+        <div class="large">
+        <section class="aboutMe">
+            <h2>About Me</h2>
+            <span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex omnis sunt ratione voluptas magnam odit unde deserunt alias numquam, suscipit quia tempora incidunt eligendi! Saepe similique exercitationem doloremque. Laborum, delectus temporibus animi consequuntur necessitatibus dolorum reiciendis sapiente cum molestiae aliquid alias consectetur blanditiis voluptatibus officia repudiandae, cupiditate ipsa illum expedita excepturi a quidem! Hic aut ex ab sunt corrupti debitis quod aliquid sint, suscipit quaerat officiis odio, cupiditate deserunt nihil mollitia sit! Animi, provident maiores.</p>
+        </span>
+        </section>
+
+        <section class="studentPhoto">
+            <h2>Student Photo</h2>
+            <div class="photoCard">
+                <div class="card">
+                </div>
+            </div>
+        </section>
+        </div>
+
+        <section class="certificate">
+            <h2 class="webCourses">Web Certificate Courses</h2>
+            <div class="butt">
+            <button id="all">All</button>
+            <button id="csebutt">CSE</button>
+            <button id="wddbutt">WDD</button>
+            </div>
+            <div class="wdd">
+                
+                <span class="course" id="course"></span>
+               
+            </div>
+            <p class="creditP">The  total amount of credit for the courses listed above is <span id="credit"></span></p>
+            <div class="a">
+                <a href="https://www.linkedin.com/in/olamide-daniel-1aa674367/"><img src="images/linkedin.png" alt="linkedIn"></a>
+                <a href="https://github.com/danielolamide-byu"><img src="images/github.png" alt="github"></a>
+                <a href="https://x.com/home"><img src="images/twitterlogo.webp" alt="twitter"></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="foot">
+        <div class="footerContent">
+        <span>&copy;<span id="year"></span> | Olamide Daniel | Lagos, Nigeria</span>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
 </body>
 </html>
