@@ -60,6 +60,10 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    font-family: "Poetsen One", sans-serif;
+}
+
 .current {
     text-decoration: underline;
     color: red;
