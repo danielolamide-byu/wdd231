@@ -1,0 +1,400 @@
+
+
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.81rem 20px;
+    color: aliceblue;
+    text-decoration: none;
+    background-color: #555;
+    border-bottom: solid 1px rgb(46, 157, 68);
+}
+
+a:hover {
+    color: brown;
+    transform: translateY(-1px);
+}
+
+.hamBurger-btn {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    display: block;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.hamBurger-btn::before {
+    content: "\2630";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.hamBurger-btn.show::before {
+    content: "\00D7";
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.head {
+    display: grid;
+    grid-template-columns: 25px auto 44px;
+    gap: 20px;
+    align-items: end;
+}
+
+h1 {
+    color: #eee;
+    padding: 1rem;
+    text-align: center;
+}
+
+.current {
+    text-decoration: underline;
+    color: red;
+}
+
+.headers {
+    border-bottom: solid 2px rgb(89, 255, 0);
+    background-color: #333;
+}
+
+section {
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 0.5rem;
+    background-color: #ddd;
+    margin-top: 20px;
+
+    a {
+        font-family: Arial, sans-serif;
+        font-size: 0.85rem;
+        color: rgb(17, 17, 25);
+    }
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-gap: 5px;
+    align-items: center;
+    justify-content: center;
+    }
+
+.ca {
+    display: grid;
+    justify-content: center;
+}
+
+.img {
+    width: auto;
+    height: 75px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 1rem #555;
+    margin-left: 50px;
+}
+
+.h {
+    margin-bottom: 0px;
+    font-size: 23px;
+    color: whitesmoke;
+}
+
+.displayButtons {
+    display: flex;
+    background-color: black;
+    padding: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
+}
+
+img {
+    margin-left: 10px;
+    width: 60%;
+}
+
+/* HomePage */
+
+
+.eve {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    margin: -7px;
+    
+}
+
+.events {
+    height: 40vh;
+    background-color: rgb(81, 80, 80);
+    margin: 0;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 20% 60%;
+    column-gap: 30px;
+    margin-top: 10px;
+}
+
+.footImg {
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+}
+
+.footerImg {
+    width: 40px;
+}
+
+.heroImage {
+    display: flex;
+    justify-content: center;
+    width: 99%;
+}
+
+
+footer {
+
+    color: #eee;
+    background-color: #333;
+    margin-top: 10px;
+    padding: 15px;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-gap: 5px;
+    align-items: center;
+
+    section {
+        text-align: center;
+
+        &>* {
+            margin: 0.1rem;
+        }
+    }
+
+    img {
+        border: 1px solid #fff;
+        box-shadow: 0 0 1rem #555;
+        margin-left: 30%;
+    }
+}
+
+
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 7px;
+        margin: -3px;
+        gap: 0;
+        width: 90%;
+        padding: 0.3rem;
+
+        &>* {
+            margin: 0 1rem;
+        }
+
+        img {
+            display: none;
+        }
+
+        &:nth-child(even) {
+            background-color: #bbb;
+        }
+}
+}
+
+                
+
+@media screen and (min-width: 800px) {
+.head{
+   border-bottom: none;
+   }
+
+   .headers {
+       display: grid;
+       grid-template-columns: auto auto;
+       border-bottom: solid 2px rgb(89, 255, 0);
+       background-color: #555;
+   }
+    .card {
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        grid-gap: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+                    
+.h {
+    margin-bottom: 0px;
+    font-size: 23px;
+}
+.hamBurger-btn {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    display: none;
+}
+.hamBurger-btn::before {
+    content: "\2630";
+}
+ul {
+    justify-content: center;
+}
+.navigation {
+    display: block;
+}
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+.navigation a {
+    display: block;
+    padding-top: 30px;
+    color: white;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 5px;
+    align-items: center;
+    section {
+        text-align: center;
+        &>* {
+            margin: 0.1rem;
+        }
+    }
+    img {
+        border: 1px solid #fff;
+        box-shadow: 0 0 1rem #555;
+        margin-left: 35%;
+    }
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: -3px;
+        width: 90%;
+        padding: 0.25rem;
+        &>* {
+            margin: 0 1rem;
+        }
+        img {
+            display: none;
+        }
+        &:nth-child(even) {
+            background-color: #bbb;
+        }
+    }
+    }       
+}
+
+
+
+ @media screen and (max-width: 500px) {
+    .card {
+         display: grid;
+         grid-template-columns: 50%;
+         grid-gap: 5px;
+         align-items: center;
+         justify-content: center;
+
+    .img {
+        width: 70px
+    }
+}
+
+
+.h {
+  font-size: 15px;
+ }
+
+.grid {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-gap: 5px;
+    align-items: center;
+
+section {
+    text-align: center;
+
+         &>* {
+             margin: 0.1rem;
+         }
+
+     }
+
+     img {
+        border: 1px solid #fff;
+        box-shadow: 0 0 1rem #555;
+        margin-left: 30%;
+     }
+ }
+
+ .list {
+     display: flex;
+     flex-direction: column;
+     margin-top: 10px;
+
+     section {
+        display: grid;
+        grid-template-columns: 50% 45fr;
+        gap: 10px;
+        margin: -3px;
+        row-gap: 7px;
+        width: 90%;
+        padding: 0.25rem;
+
+         &>* {
+             margin: 0 1rem;
+         }
+
+         img {
+             display: none;
+         }
+
+         &:nth-child(even) {
+             background-color: #bbb;
+         }
+     }
+}
+}
+
+
+
+
+
+ 

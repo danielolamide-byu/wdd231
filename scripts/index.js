@@ -158,4 +158,31 @@ hamButton.addEventListener('click', () => {
     navigation.classList.toggle('show');
 });
 
+let daycount = 2;
+let targetEvent = 3;
+
+console.log(`There are '${daycount}' 'days until' '${targetEvent}'`);
+
+
+
+
+
+
+
+async function getData() {
+  const response = await fetch('https://jsonplaceholder.typicode.com/todos/'); // request
+  const data = await response.json(); // parse the JSON data
+  console.log(data); // temp output test of data response 
+}
+
+getData();
+
+
+
+
+
+
+
+
+
 

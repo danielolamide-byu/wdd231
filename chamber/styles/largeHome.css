@@ -1,0 +1,17 @@
+@media screen and (min-width: 900px) {
+    .sectionsContainer {
+        display: grid;
+        grid-template-columns: 52% 22% 22%;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .weather, .weatherForecast {
+        height: 40vh;
+        margin-top: 2px;
+    }
+
+    .heroImage {
+        height: 300px;
+    }
+}

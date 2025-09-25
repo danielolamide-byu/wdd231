@@ -1,0 +1,20 @@
+
+
+[{
+    "firstname": "John",
+    "lastname": "Deo",
+    "age" : 30,
+    "isStudent" : true,
+    "courses" : ["WDD130", "WDD131", "WDD231"],
+    "address" : {
+        "street" : "123 Nice street",
+        "state" : "Lagos",
+        "country" : "Nigeria"
+    }
+
+},
+{
+    "name" : "James"
+
+}]
+
