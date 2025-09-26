@@ -49,7 +49,7 @@ a:hover {
 
 .head {
     display: grid;
-    grid-template-columns: 25px auto 44px;
+    grid-template-columns: 40px auto 44px;
     gap: 20px;
     align-items: end;
 }
@@ -227,6 +227,10 @@ footer {
         &:nth-child(even) {
             background-color: #bbb;
         }
+}
+
+.navImg {
+    width: 100%;
 }
 }
 
