@@ -55,7 +55,7 @@ a:hover {
 }
 
 h1 {
-    color: #eee;
+    color: #100606;
     padding: 1rem;
     text-align: center;
 }
@@ -111,7 +111,7 @@ section {
 .h {
     margin-bottom: 0px;
     font-size: 23px;
-    color: whitesmoke;
+    color: rgb(244, 241, 241);
 }
 
 .displayButtons {
