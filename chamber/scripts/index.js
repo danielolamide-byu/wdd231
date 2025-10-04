@@ -1,5 +1,7 @@
 
 
+const dat = "./data/members.json"
+const randMem = document.getElementById('randomMember')
 
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
@@ -47,7 +49,7 @@ Fetch();
 function displayResults(data) {
   console.log("Hello");
   currentTemp.innerHTML = `${data.main.temp}&deg;C`;
- description.textContent =  `${data.weather[0].description}`;
+  description.textContent =  `${data.weather[0].description}`;
   maxTemp.innerHTML = `${data.main.temp_max}`;
   minTemp.textContent = `${data.main.temp_min}`;
   humidity.innerHTML = `${data.main.humidity}`;
@@ -58,5 +60,97 @@ function displayResults(data) {
 }
 
 function displayForcastResults(forecastedData) {
-  today.textContent = `${forecastedData.list.main.temp}`;
+  today.textContent = 'NIce';
 }
+
+// Fetches the data from the JSON array.
+async function getRandomMembers() {
+  const response = await fetch(dat)
+  const data = await response.json()
+  console.table(data.members)
+  displayMembers(data.members);
+
+
+  //  let datas = JSON.parse(dat)
+  // let r =  random(() => {
+    
+  }
+
+getRandomMembers();
+
+
+
+// Displays the content of the JSON array.
+const displayMembers = (members) => {
+    members.forEach(member => {
+             
+      const randMem = document.getElementById('randomMember');
+      let randomIndex = Math.floor(Math.random() * member.length);
+    const randObj = member[randomIndex];
+      ///randMem.innerHTML = `${randObj}`;
+      
+       let infos = document.createElement('div')
+        let phone = document.createElement('h4')
+        let membershipLevel = document.createElement('h4')
+        let name = document.createElement('h3')
+        let streetAddress = document.createElement('p')
+       let website = document.createElement('h4')
+       let email = document.createElement('h4')
+       
+        let image = document.createElement('img')
+  
+
+       
+      if (member.membershipLevel > 2) {
+        name.textContent = `Name: ${member.names}`
+        streetAddress.textContent = `Address: ${member.addresses}`;
+        website.textContent = `Website: ${member.websiteURL}`
+        email.textContent = `Email: ${member.email}`
+        // phone.textContent = `Phone number: ${member.phoneNumber}`
+        // membershipLevel.textContent = `Membership Level: Tier ${member.membershipLevel}.`
+        phone.textContent = `Phone number: ${member.phoneNumber}`
+        membershipLevel.textContent = `Membership Level: Tier ${member.membershipLevel}.`
+      }
+
+       infos.appendChild(image);
+        infos.appendChild(name);
+        infos.appendChild(streetAddress);
+        infos.appendChild(website);
+        infos.appendChild(email);
+        infos.appendChild(phone);
+      infos.appendChild(membershipLevel)
+      
+      infos.classList.add('cl');
+
+        
+        randMem.appendChild(infos)
+
+    
+    });
+
+    
+
+    // Control for the Hamburger button.
+    const hamButton = document.getElementById('ham-btn');
+    const navigation = document.getElementById('nav-bar')
+    hamButton.addEventListener('click', () => {
+        hamButton.classList.toggle('show');
+        navigation.classList.toggle('show');
+    });
+
+    
+        // Get the current Year and last modified time.
+        let year = document.getElementById('year');
+        let fullYear = new Date().getFullYear()
+        let lastModified = document.getElementById('lastModified')
+    
+        year.textContent = fullYear;
+        lastModified.textContent = document.lastModified;
+}
+    
+
+
+
+
+
+// console.log("d");

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD-131 Project">
+    <meta name="author" content="Daniel">
+    <link rel="stylesheet" href="styles/frm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Dancing+Script:wght@400..700&family=Kapakana:wght@300..400&family=Poetsen+One&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/form.js" defer></script>
+    <title>Review Page</title>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <br>
+    <div class="formSection">
+        <form action="review.html" method="get">
+            <fieldset>
+                <p>Product Name*</p>
+                <label>
+                    <select name="product" id="product" class="drop" required>
+                        <option value="">Please select a product..</option>
+                        <option value="flux capacitor">Flux Capacitor</option>
+                        <option value="power laces">Power Laces</option>
+                        <option value="time circuits">Time Circuits</option>
+                        <option value="low voltage reactor">Low Voltage Reactor</option>
+                        <option value="warp equalizer">Warp Equalizer</option>
+                    </select>
+                </label>
+
+                <p>Overall Rating*</p>
+                <div class="s"></div>
+                <div class="radio">
+
+                    <label><input type="radio" name="ratings" id="rating1" class="star1" required></label>
+                    <label><input type="radio" name="ratings" id="rating2" class="star2" required></label>
+                    <label><input type="radio" name="ratings" id="rating3" class="star3" required></label>
+                    <label><input type="radio" name="ratings" id="rating4" class="star4" required></label>
+                    <label><input type="radio" name="ratings" id="rating5" class="star5" required></label>
+                </div>
+
+                <div class="date">
+                    <p>Date of Installation*</p>
+                    <label><input type="date" id="installationDate" name="dateOfInstallation" required></label>
+                </div>
+
+                <p>Which features did you find useful in the products?</p>
+                <div class="checkboxes">
+                    <label><input type="checkbox" value="yes" id="features1" name="durability">Durability</label>
+                    <label><input type="checkbox" value="yes" id="features2" name="ease-of-use">Ease of use</label>
+                    <label><input type="checkbox" value="yes" id="features3" name="performance">Performance</label>
+                    <label><input type="checkbox" value="yes" id="features4" name="design">Design</label>
+                </div>
+
+                <div class="review">
+                    <p>Written Review(Optional)</p>
+                    <label>
+                        <textarea id="review" name="review" placeholder="Review goes here"></textarea>
+                    </label>
+                </div>
+
+
+                <p>Your Name(Optional)</p>
+                <label>
+                    <input type="text" id="name" name="user'sname">
+                </label>
+            </fieldset>
+
+            <div class="button">
+                <input type="submit" value="Review Product">
+            </div>
+        </form>
+
+    </div>
+
+    <footer class="pag">
+        <p>&copy; <span id="currentyear"></span> | Olamide Daniel | Nigeria</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

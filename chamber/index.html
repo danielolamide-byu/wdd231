@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/largeHome.css">
+    <link rel="stylesheet" href="styles/largechamber.css">
+    <meta name="description" content="This is the Chamber of Commerce HomePage.">
+    <meta name="author" content="Daniel">
 <!-- <link rel="stylesheet" href="styles/normalize.css">-->   
  <link rel="stylesheet" href="styles/normalize.css">
- <script src="scripts/chamber.js" defer></script>
- <script src="scripts/index.js" defer></script>
+ <script src="scripts/index.js" type="module" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -23,9 +25,9 @@
             </div>
             <nav id="nav-bar" class="navigation">
                 <ul>
-                    <li id="target" class="current"><a href="#">Home</a></li>
+                    <li id="target" class="current"><a href="index.html">Home</a></li>
                     <li><a href="directory.html">Directory</a></li>
-                    <li><a href="#">Join</a></li>
+                    <li><a href="join.html">Join</a></li>
                     <li><a href="#">Discover</a></li>
                     <li><a href="#">Final</a></li>
                 </ul>
@@ -49,8 +51,7 @@
                 <div class="content">
                     <div>
                     <img src="images/cloud.svg" alt="cloudsImage">
-                        <img id="weather-icon" src="images/cloud.svg" alt="">
-                        </div>
+                     </div>
                         
                   <div>
                     <p><span id="current-temp"></span></p>
@@ -60,7 +61,6 @@
                     <p>Humidity: <span id="humidity"></span></p>
                     <p>Sunrise: <span id="sunrise"></span></p>
                     <p>Sunset: <span id="sunset"></span></p>
-                    <p>Sunset: <span id="today"></span></p>
                     </div>
                     
                    
@@ -70,10 +70,10 @@
 
             <section class="weatherForecast">
                 <h2 class="eve">Weather Forecast</h2>
-                <ul id="today">
-                    <li id="today">Today: </li>
-                    <li id="tomorrow">Tomorrow: </li>
-                    <li id="nextTomorrow">Next-Tomorrow: </li>
+                <ul id="todays">
+                    <li id="today">Today: 10&degC</li>
+                    <li id="tomorrow">Tomorrow: 15.2&degC</li>
+                    <li id="nextTomorrow">Next-Tomorrow: 13&degC</li>
                 </ul>
             </section>
         </div>
@@ -90,9 +90,9 @@
             info@lagoschamberofcomm.com <br>
             (345)678-900-987 <br></span>
             <div class="footImg">
-                <img class="footerImg" src="images/github.png" alt="">
-                <img class="footerImg" src="images/linkedin.png" alt="">
-                <img class="footerImg" src="images/twitterlogo.webp" alt="">
+                <img class="footerImg" src="images/github.png" alt="githubIcon">
+                <img class="footerImg" src="images/linkedin.png" alt="LinkedInIcon">
+                <img class="footerImg" src="images/twitterlogo.webp" alt="TwitterIcon">
             </div>
             <span>WDD231 Assignment</span><br>
             <span>Daniel</span><br>

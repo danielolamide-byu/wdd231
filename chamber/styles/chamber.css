@@ -64,6 +64,18 @@ h3 {
     font-family: "Poetsen One", sans-serif;
 }
 
+.cl {
+    background-color: grey;
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#randomMember {
+   
+    margin-left: 30%;
+}
+
 .current {
     text-decoration: underline;
     color: red;
@@ -143,7 +155,7 @@ img {
 .events {
     height: 40vh;
     background-color: rgb(81, 80, 80);
-    margin: 0;
+    margin-top: 10px;
 }
 
 .content {

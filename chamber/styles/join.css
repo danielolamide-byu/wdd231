@@ -1,0 +1,220 @@
+
+
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.81rem 20px;
+    color: aliceblue;
+    text-decoration: none;
+    background-color: #555;
+    border-bottom: solid 1px rgb(46, 157, 68);
+}
+
+a:hover {
+    color: brown;
+    transform: translateY(-1px);
+}
+
+.hamBurger-btn {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    display: block;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.hamBurger-btn::before {
+    content: "\2630";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.hamBurger-btn.show::before {
+    content: "\00D7";
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.head {
+    display: grid;
+    grid-template-columns: 40px auto 44px;
+    gap: 20px;
+    align-items: end;
+}
+
+h1 {
+    color: #100606;
+    padding: 1rem;
+    text-align: ceter;
+}
+
+h3 {
+    font-family: "Poetsen One", sans-serif;
+}
+
+.h {
+    margin-bottom: 0px;
+    font-size: 23px;
+    color: rgb(244, 241, 241);
+}
+
+.current {
+    text-decoration: underline;
+    color: red;
+}
+
+.headers {
+    border-bottom: solid 2px rgb(89, 255, 0);
+    background-color: #333;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+input[type='text'], input[type='email'], input[type='tel'] {
+    padding: 10px;
+    width: 70%;
+}
+
+.formSection {
+    background-color: rgb(142, 152, 152);
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    text-align: center;
+}
+
+p {
+    margin-left: 13%;
+    margin-bottom: 0;
+}
+
+textarea {
+    padding: 20px;
+    width: 68%;
+    margin-top: 10px;
+}
+
+.descriptionLabel {
+    text-align: center;
+}
+
+select {
+    padding: 10px;
+    width: 73%;
+    margin-top: 10px;
+}
+
+.select {
+    text-align: center;
+    justify-content: center;
+}
+
+.modal {
+    display: grid;
+    text-align: center;
+}
+
+.submitButton {
+    margin: 30px 0 20px 10%;
+    height: 44px;
+    border: none;
+    border-radius: 5px;
+    color: green;
+    background-color: cornflowerblue;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.button {
+    padding: 20px;
+    width: 50%;
+    margin-left: 25%;
+    background-color: rgb(179, 207, 207);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.current {
+    text-decoration: underline;
+    color: red;
+}
+
+.footImg {
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+}
+
+.footerImg {
+    width: 40px;
+}
+
+.heroImage {
+    display: flex;
+    justify-content: center;
+    width: 99%;
+}
+
+
+footer {
+
+    color: #eee;
+    background-color: #333;
+    margin-top: 10px;
+    padding: 15px;
+    align-items: center;
+}
+
+@media screen and (min-width: 800px){
+    .container {
+        display: grid;
+        grid-template-columns: 60% 30%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes.dialogBox{
+    animation-name: fadeIn;
+        animation-duration: 2s;
+}
+
+.dialogBox {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+    /* Use the shorthand animation property */
+    /* animation: fadeColor 2s ease-in-out infinite alternate; */
