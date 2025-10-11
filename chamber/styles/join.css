@@ -6,46 +6,13 @@ ul {
     padding: 0;
 }
 
-.navigation a {
-    display: block;
-    padding: 0.81rem 20px;
-    color: aliceblue;
-    text-decoration: none;
-    background-color: #555;
-    border-bottom: solid 1px rgb(46, 157, 68);
-}
+
 
 a:hover {
     color: brown;
     transform: translateY(-1px);
 }
 
-.hamBurger-btn {
-    font-size: 2rem;
-    border: none;
-    background: none;
-    display: block;
-    color: whitesmoke;
-    cursor: pointer;
-}
-
-.hamBurger-btn::before {
-    content: "\2630";
-}
-
-.navigation {
-    display: none;
-}
-
-.navigation.show {
-    display: block;
-}
-
-.hamBurger-btn.show::before {
-    content: "\00D7";
-    font-size: 30px;
-    color: whitesmoke;
-}
 
 .head {
     display: grid;
@@ -73,11 +40,6 @@ h3 {
 .current {
     text-decoration: underline;
     color: red;
-}
-
-.headers {
-    border-bottom: solid 2px rgb(89, 255, 0);
-    background-color: #333;
 }
 
 .flex {
@@ -124,17 +86,6 @@ textarea {
     text-align: center;
 }
 
-select {
-    padding: 10px;
-    width: 73%;
-    margin-top: 10px;
-}
-
-.select {
-    text-align: center;
-    justify-content: center;
-}
-
 .modal {
     display: grid;
     text-align: center;
@@ -149,15 +100,6 @@ select {
     background-color: cornflowerblue;
     font-size: 12px;
     font-weight: 900;
-}
-
-.button {
-    padding: 20px;
-    width: 50%;
-    margin-left: 25%;
-    background-color: rgb(179, 207, 207);
-    border-radius: 10px;
-    margin-bottom: 10px;
 }
 
 .current {
@@ -175,15 +117,7 @@ select {
     width: 40px;
 }
 
-.heroImage {
-    display: flex;
-    justify-content: center;
-    width: 99%;
-}
-
-
 footer {
-
     color: #eee;
     background-color: #333;
     margin-top: 10px;
@@ -196,6 +130,42 @@ footer {
         display: grid;
         grid-template-columns: 60% 30%;
     }
+
+      .hamBurger-btn {
+        font-size: 2rem;
+        border: none;
+        background: none;
+        display: none;
+    }
+
+    .hamBurger-btn::before {
+        content: "\2630";
+    }
+
+    ul {
+        justify-content: center;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background: none;
+    }
+
+    .navigation a {
+        display: block;
+        padding-top: 30px;
+        color: white;
+        text-decoration: none;
+        border-bottom: none;
+    }
+
 }
 
 .fade-in {
@@ -206,6 +176,8 @@ footer {
 .formSection {
     margin-right: 3%;
 }
+
+
 
 
 
