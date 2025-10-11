@@ -1,0 +1,112 @@
+
+
+
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.81rem 20px;
+    color: aliceblue;
+    text-decoration: none;
+    background-color: #555;
+    border-bottom: solid 1px rgb(46, 157, 68);
+}
+
+a:hover {
+    color: brown;
+    transform: translateY(-1px);
+}
+
+.hamBurger-btn {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    display: block;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.hamBurger-btn::before {
+    content: "\2630";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.hamBurger-btn.show::before {
+    content: "\00D7";
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.head {
+    display: grid;
+    grid-template-columns: 40px auto 44px;
+    gap: 20px;
+    align-items: end;
+}
+
+h1 {
+    color: #bd4444;
+    padding: 1rem;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Poetsen One", sans-serif;
+}
+
+.current {
+    text-decoration: underline;
+    color: red;
+}
+
+.headers {
+    border-bottom: solid 2px rgb(89, 255, 0);
+    background-color: #333;
+}
+
+#shower {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    gap: 20px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+section {
+    background-color: rgb(98, 98, 100);
+    border-radius: 5px;
+}
+
+.imgWidth {
+    width: 70%;
+    height: 100px;
+}
+
+section img {
+    align-items: center;
+    margin: 10px 0 0 15%;
+}
+
+a {
+    margin-top: 2px;
+}
+
+.link {
+    margin: 100px;
+}
+
+.h {
+    margin-bottom: 0;
+}
+

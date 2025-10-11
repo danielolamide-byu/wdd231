@@ -43,11 +43,12 @@ const hamButton = document.getElementById('ham-btn');
     });
 
 submitButton.addEventListener('click', () => {
-  date.value = fullYear;
+  date.value = ds;
     })
 
     
-        // Get the current Year and last modified time.
+// Get the current Year and last modified time.
+        let ds = new Date().toString();
         let year = document.getElementById('year');
         let fullYear = new Date().getFullYear()
         let lastModified = document.getElementById('lastModified')
