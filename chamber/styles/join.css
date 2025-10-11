@@ -57,7 +57,7 @@ a:hover {
 h1 {
     color: #100606;
     padding: 1rem;
-    text-align: ceter;
+    text-align: center;
 }
 
 h3 {
@@ -97,6 +97,7 @@ input[type='text'], input[type='email'], input[type='tel'] {
     border-radius: 20px;
     border: none;
     width: 100%;
+    margin-left: 3%;
 }
 
 .form {
@@ -201,6 +202,11 @@ footer {
   opacity: 0; 
   animation: fadeIn 2s ease-in forwards;
 }
+
+.formSection {
+    margin-right: 3%;
+}
+
 
 
 @keyframes fadeIn {
