@@ -95,7 +95,7 @@ h3 {
 h1 {
     color: #100606;
     padding: 1rem;
-    text-align: ceter;
+    text-align: center;
 }
 
 h3 {
@@ -183,7 +183,7 @@ select {
     height: 44px;
     border: none;
     border-radius: 5px;
-    color: green;
+    color: black;
     background-color: cornflowerblue;
     font-size: 12px;
     font-weight: 900;

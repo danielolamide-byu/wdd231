@@ -9,8 +9,8 @@
     <meta property="og:title" content="Become a member of the Lagos Chamber of Commerce. You are welcome."/>
     <meta property="og:description"
         content="This is the Join Page for the Lagos Chamber of Commerce project. The page will enable companies to be able to sign-up and also become members of the camber" />
-    <meta property="og:image" content="../images/cloud.svg"/>
-    <meta property="og:url" content="http://127.0.0.1:5500/wdd231/chamber/join.html" />
+    <meta property="og:image" content="https://danielolamide-byu.github.io/wdd231/chamber/images/cloud.svg"/>
+    <meta property="og:url" content="https://danielolamide-byu.github.io/wdd231/chamber/join" />
     <link rel="stylesheet" href="styles/join.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="icon" href="images/github.png">
@@ -21,9 +21,7 @@
         href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Dancing+Script:wght@400..700&family=Kapakana:wght@300..400&family=Poetsen+One&display=swap"
         rel="stylesheet">
         <script src="scripts/join.js" defer></script>
-
-    
-    <title>Lagos Chamber of Comerce Join Page</title>
+        <title>Lagos Chamber of Comerce Join Page</title>
 </head>
 
 <body>
@@ -45,7 +43,6 @@
                 </ul>
             </nav>
         </div>
-    
     </header>
 
     <br>
@@ -71,16 +68,18 @@
                 
                 <p>Membership Level</p>
                 <div class="select">
-                <label>
-                    <select name="product" id="product" class="drop" required>
-                        <option value="">Please select a level..</option>
+             
+                    <label for="dropdown"><select name="product" id="product" class="drop" required></label>
+                        <option value="">Please select a level.</option>
                         <option value="non-profit">NP(non-profit)</option>
                         <option value="bronze-membership">Bronze Membership</option>
                         <option value="silver-membership">Silver Membership</option>
                         <option value="god-membership">Gold Membership</option>
                     </select>
-                </label>
+               
                 </div>
+
+               
                 
                 <p>Description</p>
                 <label>
@@ -106,19 +105,19 @@
         <div class="modal fade-in">
         <h1>Membership Levels</h1>
         <div class="button">
-            <h4>Non Profit Membership Level</h4>
+            <h2>Non Profit Membership Level</h2>
         <button id="openButton">More Information</button>
         </div>
         <div class="button">
-            <h4>Bronze Membership Level</h4>
+            <h2>Bronze Membership Level</h2>
         <button id="openButton1">More Information</button>
         </div>
         <div class="button">
-            <h4>Silver Membership Level</h4>
+            <h2>Silver Membership Level</h2>
         <button id="openButton2">More Information</button>
         </div>
         <div class="button">
-            <h4>Gold Membership Level</h4>
+            <h2>Gold Membership Level</h2>
         <button id="openButton3">More Information</button>
         </div>
 
