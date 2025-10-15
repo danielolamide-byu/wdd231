@@ -61,8 +61,8 @@ h1 {
     text-align: center;
 }
 
-h3 {
-    font-family: "Poetsen One", sans-serif;
+h2, h3 {
+    color: white;
 }
 
 .current {
@@ -72,7 +72,7 @@ h3 {
 
 .headers {
     border-bottom: solid 2px rgb(89, 255, 0);
-    background-color: #333;
+    background-color: #0c0a0a;
 }
 
 #shower {
@@ -83,8 +83,9 @@ h3 {
     justify-content: center;
 }
 
-section {
-    background-color: rgb(98, 98, 100);
+.section {
+    margin: 10px;
+    background-color: #131212;
     border-radius: 5px;
 }
 
@@ -103,10 +104,30 @@ a {
 }
 
 .link {
-    margin: 100px;
+    margin: 0 20px 0 40%;
+    color: #333;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.space {
+    margin: 20px;
 }
 
 .h {
     margin-bottom: 0;
+}
+
+.mainSection h2 {
+    color: #0c0a0a;
+}
+
+.class {
+    color: #0c0a0a;
+}
+
+.spaces {
+    color: #0c0a0a;
 }
 

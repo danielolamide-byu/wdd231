@@ -1,0 +1,25 @@
+
+
+.r{
+        display: grid;
+
+            justify-content: center;
+}
+.thankPage {
+    background-color: rgb(134, 125, 125);
+    border-radius: 30px;
+    width: 100%;
+}
+
+h1 {
+color: rgb(0, 128, 66);
+text-align: center;
+}
+
+p {
+    color: rgb(10, 0, 22);
+    margin: 20px;
+    font-size: x-large;
+    text-align: center;
+    align-items: center;
+}

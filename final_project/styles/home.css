@@ -1,0 +1,59 @@
+
+
+.mainSection {
+    display: grid;
+    grid-template-columns: 30% 25% 30%;
+    gap: 20px;
+    justify-content: center;
+    /* border-bottom: 2px solid green;  */
+}
+
+.latest {
+    border-left: 1px solid gray;
+    margin: -15px 10px 10px 40px;
+    width: 80%
+    
+}
+
+.mostPopular {
+    border-right: 1px solid gray;
+    width: 80%;
+    margin: -15px;
+    height: 100%;
+}
+
+.h2 {
+    border-bottom: 2px solid gray;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    width: 60%;
+}
+
+
+h3 {
+    text-align: center;
+}
+
+.outro {
+    background-color: bisque;
+}
+
+.devices {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    margin-left: 22%;
+}
+
+p {
+    margin-left: 16%;
+}
+
+.outro img {
+    width: 30%;
+}

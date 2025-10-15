@@ -9,7 +9,7 @@
         display: grid;
         grid-template-columns: auto auto;
         border-bottom: solid 2px rgb(89, 255, 0);
-        background-color: #555;
+        background-color: #131313;
     }
 
     .card {
@@ -60,70 +60,23 @@
         border-bottom: none;
     }
 
-    .grid {
-        display: grid;
-        grid-template-columns: 32% 32% 32%;
-        grid-gap: 5px;
-        align-items: center;
-
-        section {
-            text-align: center;
-
-            &>* {
-                margin: 0.1rem;
-            }
-        }
-
-        img {
-            border: 1px solid #fff;
-            box-shadow: 0 0 1rem #555;
-            margin-left: 35%;
-        }
-    }
-
-    .list {
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-
-        section {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            margin: -3px;
-            width: 90%;
-            padding: 0.25rem;
-
-            &>* {
-                margin: 0 1rem;
-            }
-
-            img {
-                display: none;
-            }
-
-            &:nth-child(even) {
-                background-color: #bbb;
-            }
-        }
-    }
+        
+        
 }
 
-
-
-@media screen and (max-width: 500px) {
-    .card {
+@media screen and (max-width: 800px) {
+    #shower {
         display: grid;
-        grid-template-columns: 50%;
-        grid-gap: 5px;
-        align-items: center;
-        justify-content: center;
+        grid-template-columns: 40% 40%;
+    }}
 
-        .img {
-            width: 70px
-        }
+
+
+@media screen and (max-width: 400px) {
+   #shower {
+    grid-template-columns: 60%;
+   }
     }
 
 
-    .h {
-        font-size: 15px;
-    }}
+  
