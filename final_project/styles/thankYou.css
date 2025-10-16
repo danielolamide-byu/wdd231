@@ -6,9 +6,10 @@
             justify-content: center;
 }
 .thankPage {
-    background-color: rgb(134, 125, 125);
+    background-color: rgb(247, 246, 246);
     border-radius: 30px;
     width: 100%;
+    border: 3px solid green;
 }
 
 h1 {
@@ -17,7 +18,7 @@ text-align: center;
 }
 
 p {
-    color: rgb(10, 0, 22);
+    color: blue;
     margin: 20px;
     font-size: x-large;
     text-align: center;

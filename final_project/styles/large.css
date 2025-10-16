@@ -59,9 +59,6 @@
         text-decoration: none;
         border-bottom: none;
     }
-
-        
-        
 }
 
 @media screen and (max-width: 800px) {
@@ -77,6 +74,78 @@
     grid-template-columns: 60%;
    }
     }
+
+        @media screen and (min-width: 800px) {
+            .headers {
+                display: grid;
+                grid-template-columns: auto auto;
+                border-bottom: solid 2px rgb(89, 255, 0);
+                background-color: #161616;
+            }
+    
+            .card {
+                display: grid;
+                grid-template-columns: 32% 32% 32%;
+                grid-gap: 5px;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            .h {
+                margin-bottom: 0px;
+                font-size: 23px;
+            }
+    
+            .hamBurger-btn {
+                font-size: 2rem;
+                border: none;
+                background: none;
+                display: none;
+            }
+    
+            .hamBurger-btn::before {
+                content: "\2630";
+            }
+    
+            ul {
+                justify-content: center;
+            }
+    
+            .navigation {
+                display: block;
+            }
+    
+            .navigation ul {
+                display: flex;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                background: none;
+            }
+    
+            .navigation a {
+                display: block;
+                padding-top: 30px;
+                color: white;
+                text-decoration: none;
+                border-bottom: none;
+            }
+    
+        }
+    
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+    
+            100% {
+                opacity: 1;
+            }
+        }
+    
+        .formSection {
+            margin-left: 3%;
+        }
 
 
   

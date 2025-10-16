@@ -21,9 +21,9 @@ async function fetchData() {
 fetchData();
 
 const displayInfo = (datas) => {
-    const threeLatest = datas.slice(0, 2);
-    const threeMostPopular = datas.slice(39, 41)
-    threeLatest.forEach(da => {
+    const twoLatest = datas.slice(0, 2);
+    const twoMostPopular = datas.slice(39, 41)
+    twoLatest.forEach(da => {
         // if (da.description == "") {
         //     da.description.textContent = "Nicer";
         // }
@@ -55,7 +55,6 @@ const displayInfo = (datas) => {
         link.classList.add('link');
         author.textContent = `Author: ${da.author}`;
         publishedAt.textContent = `Published date: ${da.publishedAt}`;
-        
         title.textContent = `Title: ${da.title}`;
 
         section.appendChild(image)
@@ -69,7 +68,7 @@ const displayInfo = (datas) => {
         latest.appendChild(section);
     })
 
-    threeMostPopular.forEach(da => {
+    twoMostPopular.forEach(da => {
         const section = document.createElement('section')
         const image = document.createElement('img');
         const link = document.createElement('a');
@@ -116,4 +115,11 @@ const displayInfo = (datas) => {
     
         year.textContent = fullYear;
         lastModified.textContent = document.lastModified;
+
+    const hamButton = document.getElementById('ham-btn');
+    const navigation = document.getElementById('nav-bar')
+    hamButton.addEventListener('click', () => {
+        hamButton.classList.toggle('show');
+        navigation.classList.toggle('show');
+    });
 }

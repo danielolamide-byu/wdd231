@@ -24,7 +24,7 @@
 
 .h2 {
     border-bottom: 2px solid gray;
-    color: black;
+    color: rgb(22, 20, 20);
 }
 
 h2 {
@@ -56,4 +56,25 @@ p {
 
 .outro img {
     width: 30%;
+}
+
+@media screen and (max-width: 800px) {
+    .mainSection {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        
+    }
+
+    .mostPopular, .latest {
+        border: none;
+        display: grid;
+        margin-left: 10%;
+        justify-content: center;
+    }
+
+    .mainSection img {
+        width: 50%;
+        margin-left: 30%;
+    }
 }

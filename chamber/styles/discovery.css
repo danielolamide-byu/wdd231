@@ -1,0 +1,45 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+section {
+    margin: 1rem 8px;
+    background-color: rgb(27, 26, 26);
+    border-radius: 8px;
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photograph"
+    "location"
+    "description";
+}
+
+
+
+#places h2 {
+    color: rgb(125, 160, 125);
+        margin: 1rem 8px;
+        font-size: 26px;
+}
+
+#places p {
+    color: white;
+        margin: 1rem 8px;
+        grid-area: description;
+}
+
+#places address {
+    color: white;
+    grid-area: location;
+    margin: 1rem 8px;
+}
+
+#places img {
+    width: 200px;
+    margin: 10%;
+    color: white;
+    grid-area: photograph;
+}
