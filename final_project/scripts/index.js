@@ -20,7 +20,7 @@ async function fetchData() {
         displayInfo(data.articles)
         
     } catch (error) {
-        console.log(error)
+       
     }
 
 }
