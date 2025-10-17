@@ -10,7 +10,6 @@ async function fetchData() {
     try {
         const response = await fetch(uty)
         const data = await response.json()
-         console.log(data.articles)
         displayInfo(data.articles)
         
     } catch (error) {
@@ -48,6 +47,7 @@ const displayInfo = (datas) => {
         publishedAt.classList.add('spaces');
         content.classList.add('spaces');
         title.classList.add('spaces');
+        image.loading = "lazy";
         // full_name.textContent = `${da.url}`
 
         link.href = `${da.url}`;

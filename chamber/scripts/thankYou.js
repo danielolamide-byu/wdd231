@@ -13,4 +13,19 @@ document.querySelector('#i').innerHTML = `
 <p> Membership Level: ${ information.get('product') } </p>
 <p> Description: ${ information.get('description') }</p>
 <p> Date: ${ information.get('dateOfLoad') }</p>
+<p> Date: ${ information.get('numberOfVisits') }</p>
+
 `
+
+let numberOfVisits = document.getElementById("visit");
+
+let visits = Number(window.localStorage.getItem('store'));
+
+if (visits != 0) {
+    numberOfVisits.textContent = visits;
+}
+    else {
+            numberOfVisits.textContent = "First Visitor"
+        }
+visits ++ ;
+localStorage.setItem('store', visits);

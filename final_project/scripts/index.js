@@ -17,7 +17,6 @@ async function fetchData() {
     try {
         const response = await fetch(uty)
         const data = await response.json()
-         console.log(data.articles)
         displayInfo(data.articles)
         
     } catch (error) {
@@ -47,6 +46,7 @@ const displayInfo = (datas) => {
 
         image.setAttribute('src', `${da.urlToImage}`)
         image.setAttribute('alt', `${da.title}`);
+        image.loading = "lazy";
 
         image.classList.add('imgWidth');
         author.classList.add('space');

@@ -11,29 +11,7 @@ const openButton3 = document.getElementById('openButton3');
 const submitButton = document.querySelector('.submitButton');
 const date = document.getElementById('date');
 
-// openButton.addEventListener('click', () => {
-//   dialogBox.showModal();
-//   modalText.textContent = `This is the Non-profit membership level`
-// });
 
-// openButton1.addEventListener('click', () => {
-//   dialogBox.showModal();
-//   modalText.textContent = `This is the Bronze membership level`
-// })
-
-// openButton2.addEventListener('click', () => {
-//   dialogBox.showModal();
-//   modalText.textContent = `This is the Silver membership level`
-// })
-
-// openButton3.addEventListener('click', () => {
-//   dialogBox.showModal();
-//   modalText.textContent = `This is the Gold membership level`
-// })
-
-// closeButton.addEventListener('click', () => {
-//   dialogBox.close();
-// })
 
 const hamButton = document.getElementById('ham-btn');
     const navigation = document.getElementById('nav-bar')
@@ -54,4 +32,17 @@ submitButton.addEventListener('click', () => {
         let lastModified = document.getElementById('lastModified')
     
         year.textContent = fullYear;
-        lastModified.textContent = document.lastModified;
+lastModified.textContent = document.lastModified;
+        
+let numberOfVisits = document.getElementById("visit");
+
+let visits = Number(window.localStorage.getItem('store'));
+
+if (visits != 0) {
+    numberOfVisits.textContent = visits;
+}
+    else {
+            numberOfVisits.textContent = "First Visitor"
+        }
+visits ++ ;
+localStorage.setItem('store', visits);
